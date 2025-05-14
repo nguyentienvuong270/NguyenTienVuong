@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="A" placeholder="Tên của bạn">
+    <button onclick="Nhapten()">Nhập kết quả</button>
+    <h1 id="C"></h1>
+    <h1 id="D">
+        </h2>
+
+
+        <script>
+            // Cách 1:
+            let name = prompt("Tên của bạn")
+            document.write(name)
+
+            // Cách 2:
+            alert("Hello " + name)
+
+            // Cách 3:
+            console.log("Hello " + name)
+
+            // Cách 4:
+            document.getElementById("C").innerHTML = name
+
+            // Cách 5:
+            function Nhapten() {
+                let name = document.getElementById("A").value;
+                document.getElementById("D").innerHTML = name;
+            }
+
+        </script>
+
+
+</body>
+
+</html>
