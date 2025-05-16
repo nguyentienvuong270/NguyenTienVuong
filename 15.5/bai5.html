@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="A"></h1>
+    <h1 id="B"></h1>
+    <h2 id="Chu vi"></h2>
+    <h2 id="Dien tich"></h2>
+
+    <script>
+        let a = Number(prompt("Chiều dài"));
+        document.getElementById("A").innerHTML = "Chiều dài = " + a;
+        let b = Number(prompt("Chiều rộng"));
+        document.getElementById("B").innerHTML = "Chiều rộng = " + b;
+        let P = 2*(a+b);
+        document.getElementById("Chu vi").innerHTML = "Chu vi: P = " + P;
+        let S = a*b;
+        document.getElementById("Dien tich").innerHTML = "Diện tích: S = " + S;
+
+
+
+    </script>
+</body>
+
+</html>

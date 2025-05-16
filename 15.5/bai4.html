@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="A"></h1>
+
+    <h1 id="B"></h1>
+
+    <h2 id="SoSanhBang"></h2>
+
+    <h2 id="SoSanhLonHon"></h2>
+
+    <h2 id="SoSanhKhac"></h2>
+    <script>
+        let a = prompt("Số A");
+        document.getElementById("A").innerHTML = "Số A = " + a;
+        let b = prompt("Số B");
+        document.getElementById("B").innerHTML = "Số B = " + b;
+
+        if (a === b) {
+            document.getElementById("SoSanhBang").innerHTML = "a bằng b";
+        }
+        else {
+            document.getElementById("SoSanhBang").innerHTML = "a không bằng b";
+        }
+
+        if (a > b) {
+            ddocument.getElementById("SoSanhLonHon").innerHTML = "a lớn hơn b";
+        }
+        else {
+            document.getElementById("SoSanhLonHon").innerHTML = "a không lớn hơn b";
+        }
+
+        if (a !== b) {
+            document.getElementById("SoSanhKhac").innerHTML = "a khác b";
+        }
+        else {
+            document.getElementById("SoSanhKhac").innerHTML = "a không khác b";
+        }
+    </script>
+
+</body>
+
+</html>
